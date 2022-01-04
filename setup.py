@@ -1,4 +1,3 @@
-from setuptools import find_packages
 from setuptools import setup
 
 setup(
@@ -13,7 +12,11 @@ setup(
     maintainer='OSISM GmbH',
     maintainer_email='info@osism.tech',
     install_requires=[],
-    packages=find_packages(),
+    packages=['netbox_plugin_osism'],
+    package_data={
+        'netbox_plugin_osism':
+            ['templates/netbox_plugin_osism/*.html']
+    },
     include_package_data=True,
     zip_safe=False,
     platforms=['Any'],

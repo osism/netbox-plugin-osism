@@ -1,0 +1,29 @@
+{% load humanize %}
+
+<div class="card card-default">
+    <div class="card-header">
+        <strong>Interfaces</strong>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover attr-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <span title="">Grafana</span>
+                    </td>
+                    <td>
+                        <span><a href="{{ grafana }}/d/node-exporter-full/node-exporter-full?orgId=1&var-Prometheus=Prometheus&var-job=node&var-node={{ device.name }}:9100">Open node exporter dashboard</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Netdata</span>
+                    </td>
+                    <td>
+                        <span><a href="{{ netdata }}/host/{{ device.name }}/">Open Netdata dashboard</a></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

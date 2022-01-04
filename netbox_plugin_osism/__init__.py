@@ -14,6 +14,8 @@ class OSISMConfig(PluginConfig):
     min_version = '3.0.0'
     max_version = '3.1.99'
     default_settings = {
+        'grafana': 'http://localhost:3000',
+        'netdata': 'http://localhost:19999'
     }
 
 
