@@ -11,7 +11,7 @@ class OSISMConfig(PluginConfig):
     author_email = 'info@osism.tech'
     base_url = 'osism'
     required_settings = []
-    min_version = '3.1.0'
+    min_version = '3.2.0'
     max_version = '3.2.99'
     default_settings = {
         'grafana': 'http://localhost:3000',
