@@ -13,10 +13,10 @@ class InterfacesOSISM(PluginTemplateExtension):
             return self.render(
                 template_filename,
                 extra_context={
-                    'device': self.context['object'],
-                    'grafana': self.context['config'].get('grafana'),
-                    'netdata': self.context['config'].get('netdata')
-                }
+                    "device": self.context["object"],
+                    "grafana": self.context["config"].get("grafana"),
+                    "netdata": self.context["config"].get("netdata"),
+                },
             )
         except ObjectDoesNotExist:
             return ""
