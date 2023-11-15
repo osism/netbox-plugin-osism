@@ -5,9 +5,12 @@
     check:
       jobs:
         - flake8
+        - python-black
     gate:
       jobs:
         - flake8
+        - python-black
     periodic-daily:
       jobs:
         - flake8
+        - python-black
